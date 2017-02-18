@@ -10,7 +10,7 @@ How to use?
 
 Add module <b>pinCode</b> to you app module dependencies.
 
-Add an element of type pin 
+Add an element of type pin.
 ```html
 <pin digits="4" pin="pin"></pin>
 ```
