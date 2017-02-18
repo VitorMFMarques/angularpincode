@@ -8,7 +8,9 @@ A simple Angular 1 directive to draw a n digit pin input.
 How to use?
 ==============
 
-Just add an element of type pin 
+Add module <b>pinCode</b> to you app module dependencies.
+
+Add an element of type pin 
 ```html
 <pin digits="4" pin="pin"></pin>
 ```
