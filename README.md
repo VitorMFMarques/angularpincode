@@ -19,12 +19,12 @@ Options
 ==============
 Name    | Description | Mandatory | Default Value
  -------| ----------- | --------- | --------
-pin | scope varible where the pin will be binded | Yes | NA
+pin | scope varible where the pin value will be binded | Yes | NA
 digits | number of digits | No | 4
 hide-input | hide input value after inserted | No | true
 hide-timeout | time after which the input value will be hidden | No | 200 (ms)
-hide-symbol | the symbol used to show when input is hidden (HTML Symbol Entities) | No | &#9899; (&#9899)
-on-enter | function to be called when user presse enter in last digit insertion | No | NA
+hide-symbol | symbol used to show when the input is hidden (HTML Symbol Entities) | No | &#9899; (&#9899)
+on-enter | function called when user press enter after the last digit insertion | No | NA
 
 Events
 ==============
