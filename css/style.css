@@ -1,0 +1,31 @@
+div{
+    display: inline-block;
+    position: relative;
+}
+
+input{
+    height: 34px !important;
+    padding: 6px 9px!important;
+    font-size: 18px !important;
+    line-height: 1.42857143 !important;
+    color: #555 !important;
+    background-color: #fff !important;
+    background-image: none !important;
+    border: 1px solid #ccc !important;
+    width: 34px;
+}
+
+span{
+    position: absolute;
+    font-size: 12px;
+    top: 8px;
+    left: 10px;
+}
+
+div:nth-child(1) input{
+    border-radius: 4px 0 0 4px!important;
+}
+
+div:last-child input{
+    border-radius: 0 4px 4px 0!important;
+}
