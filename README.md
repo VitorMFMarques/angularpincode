@@ -29,7 +29,7 @@ on-enter | function called when user press enter after the last digit insertion 
 Events
 ==============
 
-To focus in the first input, broadcast the event 'focusPin'
+To focus in an input, broadcast the event 'focusPin' with the object {digitIndex:x}
 ```html
-$scope.$broadcast('focusPin');
+$scope.$broadcast('focusPin',{digitIndex:0});
 ```
