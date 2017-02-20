@@ -82,7 +82,7 @@ angular.module('pinCode',[]).directive('digitRestricted',['$timeout',function($t
         }
     };
 }]);
-angular.module('pinCode').directive('pin',function(){
+angular.module('pinCode').directive('pin',['$timeout',function($timeout){
     return {
         restrict:'E',
         template:'<div ng-repeat="inputIdx in inputsIdxs"><input idx="{{inputIdx}}" id="pin-d-{{inputIdx}}" type="text" ng-model="inputs[inputIdx]" digit-restricted><span ng-show="inputs[inputIdx] == \' \'" ng-bind-html="hideSymbol"></span></div>',
@@ -109,7 +109,7 @@ angular.module('pinCode').directive('pin',function(){
             });
             
             scope.$on('focusPin', function(event, args) {
-                $('#pin-d-0').focus();
+                $('#pin-d-'+args.digitIndex).focus();
             });
 
         },
@@ -122,4 +122,4 @@ angular.module('pinCode').directive('pin',function(){
            onEnter:'&?'
         }
     }
-});
+}]);
